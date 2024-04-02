@@ -1,1 +1,115 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Development Handin</title>
+        <link rel="stylesheet" href="styles.css" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <ul class = "topnav">
+                <li><a href="https://beatles-discography.vercel.app/">My Aggregator Site</a></li>
+                <li class="titleText"><a class="titleText">Development Handin</a></li>
+            </ul>
+        </nav>
+        <div class = "mainText">
+            <h1>Beatles Album Aggregator</h1>
+            <h2>Introduction</h2>
+            <p>bla bla bla
+            </p>
+
+            <h2>Competitive Analysis</h2>
+            <p>In preperation for designing and building my aggregator I completed a competitive analysis of three other plaforms to research the design of filtering, sorting, and favoriting features. I condensed this into a competitive comparison chart to best layout these comparisons. </p>
+            <table>
+                <tr>
+                  <th></th>
+                  <th><a href="https://goodreads.com">Goodreads</a></th>
+                  <th><a href="https://instagram.com">Instagram</a></th>
+                  <th><a href="https://spotify.com">Spotify</a></th>
+                </tr>
+                <tr>
+                  <th>General Favorites List</th>
+                  <td>Yes - good reads has a general read list for saved books </td>
+                  <td>Yes - instagram has a general save button</td>
+                  <td>Yes - there is a general liked songs list</td>
+                </tr>
+                <tr>
+                  <th>Specific/Customizable Lists</th>
+                  <td>Yes - you can create and name your own lists, although this is not the most intuitive</td>
+                  <td>Yes - you can make specific saved lists, but this isn’t the most intuitive</td>
+                  <td>Yes - making playlists is a large part of the platform and you can name and customize them</td>
+                </tr>
+                <tr>
+                    <th>Rating</th>
+                    <td>Yes - you can rate books and write reviews</td>
+                    <td>No - although you can comment</td>
+                    <td>No - no, although you can see artists most played songs</td>
+                  </tr>
+                <tr>
+                  <th>Toggle Public/Private Lists or favorites</th>
+                  <td>No toggle - All lists are public </td>
+                  <td>No toggle - Saved content is all private</td> 
+                  <td>Yes- you can toggle and customize which playlists and saved things are public or private (for the most part)</td>
+                </tr>
+                <tr>
+                    <th> Image in saved List </th>
+                    <td>Yes - book cover is visible</td>
+                    <td>Yes - top post image visible</td> 
+                    <td>Sometimes - some views give you a little album cover image, others don’t</td>
+                </tr>
+                <tr>
+                    <th>Ordered saved favorites or saved list</th>
+                    <td>Depends - you can sort lists based on different categories, but you can’t create a custom order</td>
+                    <td>No - automatically ordered by post date</td>
+                    <td>Yes - you can customize the order or shuffle, but you can’t sort playlists based on different factors</td>
+                </tr>
+                    <th>Show if an item is saved (to a list)</th>
+                    <td>Generally - you easily see if a book is in your read list but it is less clear if it is in one of your customizable lists</td>
+                    <td>Generally - you can see if you have saved a post, but not superficially see if a post is in a particular folder</td>
+                    <td>Sometimes - you can see if you have a song in favorites or downloaded, but not if it’s in a specific playlist</td>
+                </tr>
+                <tr>
+                    <th>Remove Item from List</th>
+                    <td>Yes - click on the item to get options and choose to remove it</td>
+                    <td>Yes - hit the save icon again to unsave it/toggle that feature off</td>
+                    <td>Yes - either edit the playlist or change the icon itself </td>
+                </tr>
+            </table>
+
+            <h3>Summary</h3>
+            <p>	Across these different interfaces there are a lot of similar functions that manifest very differently in the actual application. Having the option to save items to different lists is very important to all these platforms, however this feature is implemented differently depending on the situation. Goodreads allows you to create different “bookshelves” as lists for organizing saved books, although it defaults to a “Read” list and “To Read” one. Spotify’s playlists feel like a very different concept, although it achieves the same function of creating customizable lists. Like Goodreads, Spotify also creates a default list of “Liked Songs”. Uniquely, Spotify also generates playlists for you based on your preferences and activity. Instagram allows you to save posts to folders or to a general saved post section. Spotify and instagram handles adding items to customized lists with the most ease, while Goodreads has a less intuitive design requiring more prior knowledge in order to make and add books to your own lists, making it less learnable and having lower memorability. Overall, this consistency emphasizes the importance of having both default and customizable lists in an aggregator. 
+            </p>
+            <img src="images/InstSpot.jpg" alt="Images of instagram and spotify like and save features">
+            <p>For reference, here are the Instagram and Spotify favoriting features that I will be drawing reference from</p>
+            <h3>Features I Plan to Implement</h3>
+            <ul>
+                <li>I think that having an image or icon next to the saved item is really helpful in distinguishing the items in the saved list and so I hope to include that. When an album is favorited on my list I intend to include the album cover as well as just the title for easier visualization of the saved list. 
+                </li>
+                <br><br>
+                <li>I like Instagram’s save feature design and, since my site is so simple and all on one page, I plan to make my items removable from the list by toggling the heart icon on and off. This avoids the clutter or complication of having a remove button for each item in my saved list and also makes it clear when an item is in my list or not. Since you can only add each item once this allows for an easy visual and avoids attempts at adding the same thing multiple times. 
+                </li>
+            </ul>
+            <br><br>
+              <h2>
+                Implementation
+              </h2>
+              <p>	I love the Beatles and wanted to create a site that would allow you to group your favorite, sort, and filter the albums. I condensed the filters into two dropdown menus allowing you to filter by album type  (studio, compilation, anthology, etc.) or production label (Apple or Parlophone). Since these filters can work in tandem it is interesting seeing the overlap between the producers and the types of albums that were made. If I were to build this out more I could generalize the features and expand it to work for more albums and artists, however, for the scope of the project I chose to commit to the Beatles theme!
+
+                <br><br>
+               </p>
+               <a href="https://beatles-discography.vercel.app/"><img src="images/site1.png" alt="Image of Site" ></a>
+              <br>
+              <br>
+              <p>Clicking on the drop down allows the user to choose filtering categories, while clicking on the buttons allows the user to sort or reset to the default organization.</p>
+              <img src="images/dropdown1.png" alt="Image of Site hovering on Dropdown">
+              <p>
+              I also was inspired by Instagram and Spotify’s favoriting features that allow you to “like” or “save” a post or song by clicking the icon. I also liked the ease of removal that unclicking allows, rather than having a different remove button within the favorites list. This also provides clear visual cues of what items are in the favorites list and which aren’t. 
+              <br><br>
+              I opted for a cleaner, flat design that is aimed towards users who have familiarity with most popular sites. This meant I relied on visual cues such as the heart, rather than labeled buttons for "add to favorites" or "remove from favorites". Similarly, I used a subtle off white color to differentiate common regions, rather than a higher contrast color. While this still passes accessability assessments, it assumes some familiarity with modern website designs. 
+          </p>
+        </div>
+    </body>
+</html>
